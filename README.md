@@ -2,7 +2,7 @@
 
 ## Project Description
 
-The project was built as part of General Assembly's requirement to pass the course. The project aims to find out what is required core features for the next development project to increase the sales price. To do that, my team has cleaned the data, analyze the features, trained the model till an accuracy of 81%. 
+The project was built as part of General Assembly's requirement to pass the course. The project aims to find out what is required core features for the next development project to increase the sales price. To do that, my team has cleaned the data, analyze the features, trained the model till a scoreof 84%. 
 
 ---
 
@@ -29,14 +29,14 @@ Facing a forecasted recession in the upcoming year, Real Sky senior management t
 
 ## Problem Statement
 
-What core features should we, Real Sky, focus on to increase the sale price of homes for our next development project?
+To find out which core features to focus on to increase a house’s sale price for our next development project using Linear, Ridge and Lasso model. 
 
 ---
 
 ## Assumptions
 
 The following are the assumptions made:
-- Only features with metrics correlation >0.6 with reference to sale price are considered for the analysis
+- Only features with metrics correlation >0.3 with reference to sale price are considered for the analysis
 - Time constraint for the project
 - Only select features with less than 5% missing data
 - Missing data are replaced with median values of the features ([*source*](https://www.mastersindatascience.org/learning/how-to-deal-with-missing-data/)) 
@@ -64,24 +64,28 @@ The below are the steps that was done for data import and cleaning:
 |**saleprice**|int64|Train|The sale price of the house.| 
 |**garage area**|int64|Train & Test|The size of garage in square feet.| 
 |**gr liv area**|int64|Train & Test|Above grade (ground) living area square feet.| 
-|**1st flr sf**|int64|Train & Test|First Floor square feet.| 
 |**total bsmt sf**|int64|Train & Test|Total square feet of basement area.| 
 |**bsmt qual**|int64|Train & Test|Evaluates the height of the basement.| 
 |**exter qual**|int64|Train & Test|Evaluates the quality of the material on the exterior.| 
 |**overall qual**|int64|Train & Test|Rates the overall material and finish of the house.| 
+|**year built**|int64|Train & Test|Construction date.| 
+|**year remod/add**|int64|Train & Test|Remodel date.| 
+|**mas vnr area**|int64|Train & Test|Masonry veneer area in square feet.| 
+|**bsmt exposure**|int64|Train & Test|The walkout or garden level walls.| 
+|**full bath**|int64|Train & Test|Full bathrooms above grade.| 
+|**totrms abvgrd**|int64|Train & Test|Total rooms above grade.| 
+|**fireplaces**|int64|Train & Test|The number of fireplaces.| 
+|**wood deck sf**|int64|Train & Test|Wood deck area in square feet.| 
+|**open porch sf**|int64|Train & Test|Open porch area in square feet.| 
 
 ---
 
 ## Exploratory Data Analysis
 
-From the Data Analysis, I have found out the core features that contributed to the sales prices are :
+From the Data Analysis, I have found out the top 3 core features that contributed to the sales prices are :
 - overall qual 
-- exter qual       
-- bsmt qual        
-- total bsmt sf    
-- 1st flr sf       
-- gr liv area      
-- garage area
+- exter qual                    
+- gr liv area
 
 ---
 
@@ -100,10 +104,12 @@ The following are the visualization done:
 
 ## Conclusions & Recommendations
 
-The key takeaway is that with my model,which has a 81% accuracy ,have identified 7 top core features that will greatly affect the sales price and we should place our focus on these features for the next development.
+The key takeaway :
+1. Ridge model has a 84% Score;
+2. Identified 3 top core features which are ground living area, overall quality and external quality
 
-Therefore, I recommend that we can have a greater budget allocation and maketing on the core features.
+Therefore, I recommend that we can have a greater budget allocations and maketing on the 3 core features improve the sales price of the new housing development.
 
-In the future, I hope that I can implement features such as forecasting sales price using of machine learning.
+In the future, I hope that I can implement features such as forcasting sales price using of machine learning.
 
 ---
