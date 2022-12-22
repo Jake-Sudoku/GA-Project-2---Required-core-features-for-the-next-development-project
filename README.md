@@ -2,7 +2,7 @@
 
 ## Project Description
 
-The project was built as part of General Assembly's requirement to pass the course. The project aims to find out what is required core features for the next development project to increase the sales price. To do that, my team has cleaned the data, analyze the features, trained the model till a scoreof 84%. 
+The project was built as part of General Assembly's requirement to pass the course. The project aims to find out what is required core features for the next development project to increase the sales price. To do that, my team has cleaned the data, analyze the features, trained the model till a score of 84%. 
 
 ---
 
